@@ -3,15 +3,12 @@
 var enabled = false;
 
 ModAPI.addEventListener("key", (event) => {
-    if (event.key == 33) {//f
+    if (event.key == 76) {//L
       if (enabled == true) {
-        enabled = false;
+       let enabled = false;
         ModAPI.displayToChat({msg: "§5AutoClicker disabled!"})
-      } 
-    }
-    if (event.key == 33) {
-        if(enabled == false){
-        enabled = true;
+    if(enabled == false){
+       let enabled = true;
         ModAPI.displayToChat({msg: "§5AutoClicker enabled!"})
       }
     }
